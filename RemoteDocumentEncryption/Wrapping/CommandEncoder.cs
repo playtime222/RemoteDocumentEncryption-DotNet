@@ -2,9 +2,9 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping.Implementation;
+using NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping.Implementation;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping;
 
 public class CommandEncoder
 {

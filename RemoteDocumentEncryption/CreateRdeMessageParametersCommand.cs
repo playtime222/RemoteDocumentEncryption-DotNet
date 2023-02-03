@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping.Implementation;
+using NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping;
+using NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping.Implementation;
 using Org.BouncyCastle.Utilities;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption;
 
 public class CreateRdeMessageParametersCommand
 {

@@ -7,7 +7,7 @@ using Org.BouncyCastle.Crypto.Modes;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Security;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption
 {
     public static class Crypto
     {

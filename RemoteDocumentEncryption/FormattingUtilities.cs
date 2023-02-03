@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Org.BouncyCastle.Utilities.Encoders;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption;
 
 public static class FormattingUtilities
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping;
 
 
 

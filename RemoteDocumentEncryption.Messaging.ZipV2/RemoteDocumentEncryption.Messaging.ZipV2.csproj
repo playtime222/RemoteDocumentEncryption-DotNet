@@ -4,15 +4,22 @@
     <TargetFramework>netstandard2.1</TargetFramework>
 	  <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
+
+	  <PackageId>NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging.ZipV2</PackageId>
+	  <RootNamespace>NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging.ZipV2</RootNamespace>
+	  <AssemblyName>NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging.ZipV2</AssemblyName>
+
+	  <Title>Remote Document Encryption Zip Message Format</Title>
+	  <Company>Mefitihe BV</Company>
+	  <Version>1.0.0-beta</Version>
+	  <Authors>Steve Kellaway</Authors>
+	  <Description>Zip message format for Remote Document Encryption.</Description>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NL.Rijksoverheid.RDW.RemoteDocumentEncryption" Version="1.0.0-beta" />
+    <PackageReference Include="NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging" Version="1.0.0-beta" />
     <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\RemoteDocumentEncryption\RemoteDocumentEncryption.csproj" />
-    <ProjectReference Include="..\RemoteDocumentEncryption.Messaging\RemoteDocumentEncryption.Messaging.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Messaging;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging;
 
 //TODO validation
 public class FileArgs

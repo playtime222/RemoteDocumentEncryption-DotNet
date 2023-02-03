@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping.Implementation;
+using NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping.Implementation;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Math.EC;

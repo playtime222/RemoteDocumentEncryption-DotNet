@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
 using Org.BouncyCastle.Security;
 using Org.BouncyCastle.Utilities.Encoders;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Messaging.ZipV2;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging.ZipV2;
 
 
 public sealed class ZipMessageEncoder : IMessageEncoder

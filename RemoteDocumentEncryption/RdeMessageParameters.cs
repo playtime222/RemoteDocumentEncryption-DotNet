@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption;
 
 public record RdeMessageParameters
 {

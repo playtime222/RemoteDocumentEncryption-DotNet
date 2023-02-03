@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping.Implementation;
+using NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping.Implementation;
 using Org.BouncyCastle.Utilities.Encoders;
 
 namespace CaSessionUtilitiesTest;

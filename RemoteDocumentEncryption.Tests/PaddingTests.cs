@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Linq;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping.Implementation;
+using NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping.Implementation;
 using Org.BouncyCastle.Utilities.Encoders;
 
 namespace CaSessionUtilitiesTest;

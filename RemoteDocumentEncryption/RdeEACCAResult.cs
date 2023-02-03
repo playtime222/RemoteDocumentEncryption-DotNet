@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping;
+using NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption;
 
 public record RdeEACCAResult
 {

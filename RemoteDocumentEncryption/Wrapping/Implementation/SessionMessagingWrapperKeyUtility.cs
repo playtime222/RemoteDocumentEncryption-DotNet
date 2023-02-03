@@ -2,7 +2,7 @@
 using System.Linq;
 using Org.BouncyCastle.Crypto.Digests;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping.Implementation;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping.Implementation;
 
 public static class SessionMessagingWrapperKeyUtility
 {

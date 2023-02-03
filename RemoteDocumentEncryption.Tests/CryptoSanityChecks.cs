@@ -1,5 +1,5 @@
 using System.Linq;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+using NL.Rijksoverheid.RDW.RemoteDocumentEncryption;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Utilities.Encoders;
 

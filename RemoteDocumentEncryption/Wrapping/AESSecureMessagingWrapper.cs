@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using Org.BouncyCastle.Utilities.Encoders;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping;
 
 public class AesSecureMessagingWrapper : SecureMessagingWrapper
 {

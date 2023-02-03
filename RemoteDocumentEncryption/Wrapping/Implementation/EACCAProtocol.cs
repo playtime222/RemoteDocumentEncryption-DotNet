@@ -7,7 +7,7 @@ using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Security;
 using Org.BouncyCastle.X509;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping.Implementation;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Wrapping.Implementation;
 
 public class EACCAProtocol
 {

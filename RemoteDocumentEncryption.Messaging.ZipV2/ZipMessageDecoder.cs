@@ -5,9 +5,10 @@ using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
+using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
 using Org.BouncyCastle.Utilities.Encoders;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Messaging.ZipV2;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging.ZipV2;
 
 public class ZipMessageDecoder
 {

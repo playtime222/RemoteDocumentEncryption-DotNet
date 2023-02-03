@@ -5,6 +5,14 @@
 	  <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  <Title>Remote Document Encryption Message Format Interface</Title>
+	  <Company>Mefitihe BV</Company>
+	  <Version>1.0.0-beta</Version>
+	  <Authors>Steve Kellaway</Authors>
+	  <Description>Interface for messaging format for Remote Document Encryption.</Description>
+	  <PackageId>NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging</PackageId>
+	  <RootNamespace>NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging</RootNamespace>
+	  <AssemblyName>NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging</AssemblyName>
   </PropertyGroup>
 
 	<ItemGroup>

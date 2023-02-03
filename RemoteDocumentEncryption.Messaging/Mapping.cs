@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Linq;
-using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Messaging;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption.Messaging;
 
 //public static class Mapping
 //{

@@ -2,7 +2,7 @@
 using System.Linq;
 using Org.BouncyCastle.Math;
 
-namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+namespace NL.Rijksoverheid.RDW.RemoteDocumentEncryption;
 
 /// <summary>
 /// All from DG14. This is the dto.
