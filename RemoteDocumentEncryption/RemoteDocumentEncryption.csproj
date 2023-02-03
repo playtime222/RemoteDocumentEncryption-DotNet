@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<AssemblyName>NL.Rijksoverheid.RDW.RemoteDocumentEncryption</AssemblyName>
+		<RootNamespace>NL.Rijksoverheid.RDW.RemoteDocumentEncryption</RootNamespace>
+		<SignAssembly>True</SignAssembly>
+		<Title>Remote Document Encryption</Title>
+		<Company>Mefitihe BV</Company>
+		<Version>1.0.0-beta</Version>
+		<Authors>Steve Kellaway</Authors>
+		<Description>Implementation of Remote Document Encryption as proposed by Eric Verheul. Funded by the RDW.</Description>
+		<PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="ReadMe.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>

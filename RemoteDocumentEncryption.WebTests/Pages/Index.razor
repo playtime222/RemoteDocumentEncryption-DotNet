@@ -1,0 +1,72 @@
+﻿@page "/"
+@using System.Diagnostics;
+@using Org.BouncyCastle.Utilities.Encoders;
+@using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+@using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping;
+@using NL.Rijksoverheid.RDW.RDE.CaSessionUtilities.Wrapping.Implementation;
+@using System.Text
+
+
+<PageTitle>Index</PageTitle>
+
+<h1>Tests</h1>
+<table>
+    @foreach (var msg in _Messages)
+    {
+        <tr>
+            <td style="font-family: monospace, monospace; white-space: pre;">@msg</td>
+        </tr>
+    }
+</table>
+
+
+@code
+{
+
+    string[] _Messages;
+
+    protected override void OnInitialized()
+    {
+        _Messages = new[] {
+            Write(255, "00b08e00ff", "0cb08e000d9701ff8e085d83100cf76663d300", "7319D1537EF2FE5CB46AFCFF2DF33B521F3A0C4FA92212D98EB49D9CD6BB8916", "ADCBA368FD14A836908252EF76D09BAD2766C5FFB2FE7857F468676FC4B293E0"),
+            Write(256, "00b08e0000", "0cb08e000d9701008e08b16e78e0d1d0023f00", "7319D1537EF2FE5CB46AFCFF2DF33B521F3A0C4FA92212D98EB49D9CD6BB8916", "ADCBA368FD14A836908252EF76D09BAD2766C5FFB2FE7857F468676FC4B293E0")
+        };
+    }
+
+    private string Write(int requestedLength, string hexPlain, string hexWrapped, string ksEncString, string ksMacString)
+    {
+        var sb = new StringBuilder();
+
+
+        sb.AppendLine("KsEnc     : " + ksEncString);
+        sb.AppendLine("KsMac     : " + ksMacString);
+        sb.AppendLine("Length    : " + requestedLength);
+        sb.AppendLine("");
+
+        const int shortFileId = 14;
+
+        var sfi = 0x80 | (shortFileId & 0xFF);
+        var plainApdu = new CommandApdu(ISO7816.CLA_ISO7816, ISO7816.INS_READ_BINARY, sfi, 0, requestedLength);
+        var actualPlain = plainApdu.ToArray();
+        sb.AppendLine("act apdu  : " + Hex.ToHexString(actualPlain));
+        sb.AppendLine("exp apdu  : " + hexPlain);
+        //Assert.Equal(Hex.Decode(hexPlain), actualPlain);
+
+        sb.AppendLine("");
+
+        var wrapper = new AesSecureMessagingWrapper(Hex.Decode(ksEncString), Hex.Decode(ksMacString));
+        var wrapped = new CommandEncoder(wrapper).Encode(plainApdu); //, 1
+
+        sb.AppendLine("data      : " + wrapped.GetData().PrettyHexFormat());
+
+        var actual = wrapped.ToArray();
+
+        sb.AppendLine("");
+        sb.AppendLine("Actual    : " + Hex.ToHexString(actual));
+        sb.AppendLine("Expected  : " + hexWrapped);
+
+        //Assert.Equal(Hex.Decode(hexWrapped), actual);
+
+        return sb.ToString();
+    }
+}

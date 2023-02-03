@@ -1,0 +1,17 @@
+﻿using System;
+using System.Linq;
+
+namespace NL.Rijksoverheid.RDW.RDE.CaSessionUtilities;
+
+/// <summary>
+/// From enrolment, specifically DG14
+/// </summary>
+public record CaSessionArgs
+{
+    //caSessionArgs.getCaPublicKeyInfo().getKeyId(),
+    //caSessionArgs.getCaPublicKeyInfo().getObjectIdentifier(),
+    //caSessionArgs.getCaPublicKeyInfo().getSubjectPublicKey());
+    //caSessionArgs.getCaInfo().getObjectIdentifier(),
+    public string ProtocolOid { get; set; }
+    public ChipAuthenticationPublicKeyInfo PublicKeyInfo { get; set; }
+}
